@@ -29,7 +29,7 @@ df['Sprint'] = ((df['Date'] - df['Date'].min()) // pd.Timedelta(weeks=2)).astype
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-
+server=app.server
 # Layout with 3 pages and navigation buttons
 app.layout = html.Div(style={'background-color': 'black', 'color': 'white', 'padding': '20px'}, children=[
     html.H1('Software Development Metrics Dashboard', style={'text-align': 'center'}),
