@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 
 repo_owner = 'Saimohan2-4'
-repo_name = 'sample-for-satsure-data'
+repo_name = 'satsure-data'
 branch = 'main'
 file_path = 'sample_dataset_large.csv'
 
