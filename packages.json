@@ -1,5 +1,5 @@
 {
-  "name": "satsure-data",
+  "name": "satsure-data-9kis",
   "version": "1.0.0",
   "scripts": {
     "build": "pip install -r requirements.txt && python app.py"
