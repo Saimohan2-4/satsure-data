@@ -1,0 +1,101 @@
+Date,Resource,Task_ID,Task_Type,Story_Points,Status,Start_Date,End_Date,Estimated_Hours,Actual_Hours,Defects_Reported,Rework_Hours
+2024-02-14,Resource_1,T1,Feature,7,Completed,2024-01-08,2024-02-08,6,6,0,3
+2024-02-17,Resource_6,T2,Feature,1,In Progress,2024-01-05,2024-01-22,14,6,3,4
+2024-03-05,Resource_1,T3,Improvement,5,Completed,2024-01-04,2024-02-02,17,18,3,3
+2024-03-08,Resource_2,T4,Improvement,8,In Progress,2024-01-06,2024-01-21,14,1,3,1
+2024-03-08,Resource_3,T5,Bug,4,Completed,2024-01-07,2024-01-30,19,17,3,3
+2024-01-10,Resource_5,T6,Bug,4,Completed,2024-01-04,2024-02-06,18,17,1,2
+2024-03-24,Resource_3,T7,Feature,1,Completed,2024-01-03,2024-01-23,8,1,2,0
+2024-01-22,Resource_1,T8,Feature,1,Completed,2024-01-09,2024-01-29,18,11,0,4
+2024-02-06,Resource_4,T9,Improvement,4,In Progress,2024-01-02,2024-02-09,15,13,0,2
+2024-03-28,Resource_3,T10,Bug,6,In Progress,2024-01-05,2024-01-31,4,1,4,1
+2024-03-11,Resource_1,T11,Bug,4,Completed,2024-01-01,2024-02-06,11,8,2,4
+2024-03-29,Resource_8,T12,Improvement,7,In Progress,2024-01-14,2024-01-22,11,6,2,3
+2024-03-29,Resource_6,T13,Feature,8,Completed,2024-01-20,2024-01-21,2,5,0,1
+2024-01-13,Resource_10,T14,Bug,1,In Progress,2024-01-10,2024-01-26,17,5,2,3
+2024-02-28,Resource_1,T15,Bug,4,In Progress,2024-01-06,2024-01-23,11,6,4,2
+2024-03-06,Resource_3,T16,Bug,1,Completed,2024-01-02,2024-02-05,19,13,1,2
+2024-02-09,Resource_8,T17,Bug,8,In Progress,2024-01-08,2024-01-24,17,18,3,1
+2024-03-28,Resource_3,T18,Bug,8,Completed,2024-01-09,2024-02-04,3,13,4,0
+2024-02-16,Resource_10,T19,Improvement,6,Completed,2024-01-08,2024-01-26,7,7,3,1
+2024-03-29,Resource_3,T20,Improvement,3,Completed,2024-01-04,2024-02-01,10,8,0,0
+2024-03-22,Resource_4,T21,Improvement,2,Completed,2024-01-13,2024-02-09,3,17,1,1
+2024-02-07,Resource_4,T22,Feature,1,Completed,2024-01-04,2024-01-27,13,1,4,1
+2024-01-26,Resource_3,T23,Bug,5,In Progress,2024-01-07,2024-01-27,10,16,2,4
+2024-03-18,Resource_4,T24,Improvement,8,In Progress,2024-01-08,2024-02-09,5,11,1,0
+2024-03-13,Resource_5,T25,Bug,1,Completed,2024-01-20,2024-01-27,5,4,4,0
+2024-01-10,Resource_2,T26,Bug,4,Completed,2024-01-01,2024-01-23,10,4,1,2
+2024-01-21,Resource_3,T27,Bug,5,Completed,2024-01-06,2024-01-27,11,17,0,3
+2024-03-21,Resource_10,T28,Bug,5,Completed,2024-01-12,2024-01-26,13,17,2,2
+2024-03-10,Resource_2,T29,Feature,2,In Progress,2024-01-10,2024-01-26,9,10,3,0
+2024-03-20,Resource_5,T30,Improvement,1,In Progress,2024-01-20,2024-02-03,2,6,3,4
+2024-02-17,Resource_7,T31,Improvement,3,Completed,2024-01-08,2024-01-30,6,17,3,0
+2024-03-05,Resource_9,T32,Feature,7,Completed,2024-01-06,2024-01-25,8,18,4,3
+2024-03-23,Resource_3,T33,Bug,7,In Progress,2024-01-09,2024-02-03,1,10,1,3
+2024-03-29,Resource_4,T34,Bug,5,Completed,2024-01-12,2024-02-07,2,13,2,1
+2024-02-19,Resource_1,T35,Feature,5,In Progress,2024-01-15,2024-01-24,4,16,2,4
+2024-01-30,Resource_1,T36,Feature,3,In Progress,2024-01-01,2024-02-03,19,7,4,2
+2024-01-20,Resource_7,T37,Feature,5,In Progress,2024-01-09,2024-02-09,19,15,2,4
+2024-01-20,Resource_1,T38,Improvement,7,In Progress,2024-01-20,2024-01-29,9,2,2,1
+2024-01-15,Resource_7,T39,Bug,4,In Progress,2024-01-07,2024-02-03,19,5,1,0
+2024-02-09,Resource_4,T40,Improvement,3,In Progress,2024-01-11,2024-01-26,8,17,1,3
+2024-02-02,Resource_4,T41,Bug,4,In Progress,2024-01-20,2024-02-06,11,5,1,0
+2024-03-06,Resource_9,T42,Improvement,8,In Progress,2024-01-03,2024-02-04,19,8,4,0
+2024-01-10,Resource_9,T43,Feature,1,In Progress,2024-01-01,2024-01-26,4,15,4,1
+2024-02-27,Resource_9,T44,Improvement,6,In Progress,2024-01-20,2024-01-22,13,8,4,2
+2024-02-02,Resource_3,T45,Feature,6,In Progress,2024-01-15,2024-01-26,14,3,2,0
+2024-02-01,Resource_4,T46,Bug,6,Completed,2024-01-01,2024-01-27,1,17,3,3
+2024-03-15,Resource_3,T47,Bug,1,Completed,2024-01-20,2024-02-02,11,16,2,3
+2024-01-24,Resource_1,T48,Bug,1,In Progress,2024-01-07,2024-01-31,4,16,1,2
+2024-02-05,Resource_9,T49,Feature,8,In Progress,2024-01-02,2024-02-04,7,19,3,2
+2024-03-16,Resource_9,T50,Feature,8,In Progress,2024-01-13,2024-01-29,4,12,0,1
+2024-02-25,Resource_4,T51,Feature,6,In Progress,2024-01-19,2024-01-28,7,15,3,4
+2024-01-29,Resource_9,T52,Feature,4,Completed,2024-01-14,2024-02-03,3,8,1,3
+2024-02-04,Resource_3,T53,Feature,5,Completed,2024-01-10,2024-01-26,19,3,1,0
+2024-01-01,Resource_9,T54,Feature,8,In Progress,2024-01-05,2024-02-05,19,18,1,1
+2024-01-01,Resource_5,T55,Bug,5,Completed,2024-01-18,2024-01-31,7,4,1,2
+2024-02-06,Resource_4,T56,Feature,6,Completed,2024-01-04,2024-01-24,12,8,0,0
+2024-02-23,Resource_1,T57,Improvement,3,In Progress,2024-01-03,2024-01-31,1,14,3,4
+2024-01-06,Resource_5,T58,Improvement,3,Completed,2024-01-14,2024-02-08,5,17,0,2
+2024-02-08,Resource_4,T59,Bug,5,In Progress,2024-01-16,2024-01-24,14,6,2,4
+2024-01-18,Resource_7,T60,Bug,7,Completed,2024-01-05,2024-02-04,10,5,3,4
+2024-03-20,Resource_10,T61,Bug,2,In Progress,2024-01-10,2024-02-08,3,14,2,3
+2024-01-05,Resource_9,T62,Improvement,4,Completed,2024-01-05,2024-01-26,2,6,2,3
+2024-02-12,Resource_1,T63,Bug,4,Completed,2024-01-18,2024-01-25,13,12,2,4
+2024-02-28,Resource_9,T64,Bug,4,In Progress,2024-01-19,2024-02-07,16,9,1,3
+2024-02-01,Resource_6,T65,Feature,2,Completed,2024-01-14,2024-01-26,2,1,3,2
+2024-01-02,Resource_10,T66,Bug,3,Completed,2024-01-14,2024-01-24,13,18,4,4
+2024-03-06,Resource_1,T67,Improvement,6,Completed,2024-01-03,2024-01-26,6,6,3,4
+2024-02-11,Resource_10,T68,Bug,3,Completed,2024-01-04,2024-01-29,7,5,1,1
+2024-02-27,Resource_7,T69,Bug,4,Completed,2024-01-10,2024-01-25,2,2,3,1
+2024-02-05,Resource_6,T70,Feature,7,In Progress,2024-01-13,2024-02-07,11,6,1,1
+2024-01-12,Resource_4,T71,Feature,6,Completed,2024-01-16,2024-01-22,7,17,3,1
+2024-02-16,Resource_2,T72,Bug,3,In Progress,2024-01-03,2024-02-08,7,7,3,0
+2024-03-23,Resource_9,T73,Bug,4,Completed,2024-01-20,2024-01-22,7,9,2,1
+2024-01-01,Resource_1,T74,Improvement,8,Completed,2024-01-07,2024-02-04,7,5,0,2
+2024-01-15,Resource_5,T75,Bug,5,In Progress,2024-01-15,2024-02-07,12,11,3,0
+2024-02-23,Resource_10,T76,Improvement,5,In Progress,2024-01-17,2024-01-28,19,11,4,2
+2024-01-13,Resource_7,T77,Improvement,3,In Progress,2024-01-16,2024-02-01,19,4,0,1
+2024-02-12,Resource_6,T78,Bug,6,In Progress,2024-01-09,2024-02-04,19,6,4,4
+2024-03-25,Resource_8,T79,Improvement,8,Completed,2024-01-01,2024-02-06,3,10,3,0
+2024-03-16,Resource_9,T80,Improvement,2,Completed,2024-01-11,2024-01-22,13,9,1,4
+2024-03-09,Resource_9,T81,Feature,7,In Progress,2024-01-12,2024-02-07,10,18,3,2
+2024-01-07,Resource_10,T82,Bug,3,Completed,2024-01-14,2024-02-02,9,9,2,2
+2024-03-09,Resource_3,T83,Bug,6,In Progress,2024-01-08,2024-02-04,6,11,1,0
+2024-02-17,Resource_9,T84,Bug,1,In Progress,2024-01-07,2024-01-21,12,2,4,2
+2024-01-04,Resource_7,T85,Improvement,7,In Progress,2024-01-14,2024-01-23,2,15,3,0
+2024-03-17,Resource_7,T86,Bug,4,In Progress,2024-01-16,2024-02-09,12,6,3,2
+2024-02-22,Resource_10,T87,Bug,1,Completed,2024-01-10,2024-02-04,16,17,1,4
+2024-03-19,Resource_2,T88,Bug,3,Completed,2024-01-07,2024-02-08,13,4,3,3
+2024-01-16,Resource_7,T89,Improvement,5,In Progress,2024-01-12,2024-02-01,16,8,0,1
+2024-01-21,Resource_9,T90,Feature,4,Completed,2024-01-19,2024-01-30,13,2,4,1
+2024-02-28,Resource_9,T91,Bug,3,Completed,2024-01-08,2024-02-04,19,9,3,3
+2024-01-24,Resource_4,T92,Feature,2,In Progress,2024-01-02,2024-01-21,14,1,3,3
+2024-03-20,Resource_3,T93,Bug,3,In Progress,2024-01-10,2024-02-02,13,6,1,0
+2024-01-14,Resource_4,T94,Bug,2,In Progress,2024-01-03,2024-01-30,10,16,2,2
+2024-03-26,Resource_7,T95,Improvement,5,Completed,2024-01-19,2024-02-08,7,7,4,4
+2024-02-18,Resource_4,T96,Feature,6,Completed,2024-01-15,2024-01-25,5,16,0,1
+2024-02-19,Resource_7,T97,Improvement,2,Completed,2024-01-06,2024-01-28,17,6,0,3
+2024-03-10,Resource_6,T98,Feature,7,In Progress,2024-01-05,2024-01-24,9,10,1,3
+2024-02-11,Resource_8,T99,Improvement,7,In Progress,2024-01-19,2024-02-06,6,18,0,3
+2024-02-05,Resource_1,T100,Feature,8,Completed,2024-01-15,2024-02-02,16,17,2,2
