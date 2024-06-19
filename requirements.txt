@@ -1,5 +1,4 @@
 dash
 pandas
 plotly
-reuqests
 
