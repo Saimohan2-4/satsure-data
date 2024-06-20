@@ -29,7 +29,8 @@ df['Sprint'] = ((df['Date'] - df['Date'].min()) // pd.Timedelta(weeks=2)).astype
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-server=app.server
+server = app.server
+
 # Layout with 3 pages and navigation buttons
 app.layout = html.Div(style={'background-color': 'black', 'color': 'white', 'padding': '20px'}, children=[
     html.H1('Software Development Metrics Dashboard', style={'text-align': 'center'}),
@@ -102,7 +103,19 @@ def render_page_1():
                 value=df['Sprint'].min(),  # Initial value
                 inline=True,
                 style={'color': 'white'}
-            )
+            ),
+            html.Div(
+    id='task-count-page-1',
+    children="Your content here",  # Replace with your actual content
+    style={
+        'textAlign': 'center',
+        'marginLeft': '20px',
+        'display': 'inline-block',
+        'border': '1px solid #FFFFFF',  # Border style: 1px solid black
+        'padding': '1px'  # Optional padding for inner content
+    }
+)
+
         ], style={'text-align': 'left', 'margin-bottom': '20px'}),
         
         html.Div([
@@ -116,11 +129,13 @@ def render_page_1():
 @app.callback(
     [Output('velocity-graph', 'figure'),
      Output('cycle-time-graph', 'figure'),
-     Output('defect-rate-graph', 'figure')],
+     Output('defect-rate-graph', 'figure'),
+     Output('task-count-page-1', 'children')],
     [Input('sprint-radioitems', 'value')]
 )
 def update_page_1(selected_sprint):
     filtered_df = df[df['Sprint'] == selected_sprint]
+    task_count = filtered_df.shape[0]
     
     # Velocity Chart
     velocity_fig = px.bar(filtered_df, x='Task_ID', y='Story_Points', title=f'Velocity - Sprint {selected_sprint}')
@@ -132,7 +147,7 @@ def update_page_1(selected_sprint):
     # Defect Rate Chart
     defect_rate_fig = px.bar(filtered_df, x='Task_ID', y='Defects_Reported', title=f'Defect Rate - Sprint {selected_sprint}')
     
-    return velocity_fig, cycle_time_fig, defect_rate_fig
+    return velocity_fig, cycle_time_fig, defect_rate_fig, html.Div([html.H3('Count'), html.P(f'{task_count}')])
 
 def render_page_2():
     return html.Div([
@@ -143,13 +158,15 @@ def render_page_2():
                 value=df['Sprint'].min(),  # Initial value
                 inline=True,
                 style={'color': 'white'}
-            )
+            ),
+            html.Div(id='task-count-page-2', style={'margin-left': '20px', 'display': 'inline-block'})
         ], style={'text-align': 'left', 'margin-bottom': '20px'}),
         
         html.Div([
             dcc.Graph(id='time-slippage-graph', style={'display': 'inline-block', 'width': '49%', 'padding-right': '10px'}),
             dcc.Graph(id='sprint-burndown-graph', style={'display': 'inline-block', 'width': '49%', 'padding-left': '10px'})
         ], style={'text-align': 'center', 'margin-bottom': '20px'}),
+        
         html.Div([
             dcc.Graph(id='lead-time-graph', style={'display': 'inline-block', 'width': '49%', 'padding-right': '10px'}),
             dcc.Graph(id='resource-utilization-graph', style={'display': 'inline-block', 'width': '49%', 'padding-left': '10px'})
@@ -160,11 +177,13 @@ def render_page_2():
     [Output('time-slippage-graph', 'figure'),
      Output('sprint-burndown-graph', 'figure'),
      Output('lead-time-graph', 'figure'),
-     Output('resource-utilization-graph', 'figure')],
+     Output('resource-utilization-graph', 'figure'),
+     Output('task-count-page-2', 'children')],
     [Input('sprint-radioitems-page-2', 'value')]
 )
 def update_page_2(selected_sprint):
     filtered_df = df[df['Sprint'] == selected_sprint]
+    task_count = filtered_df.shape[0]
     
     # Calculate Time Slippage (Actual_Hours - Estimated_Hours)
     filtered_df['Time_Slippage'] = filtered_df['Actual_Hours'] - filtered_df['Estimated_Hours']
@@ -183,7 +202,7 @@ def update_page_2(selected_sprint):
     # Resource Utilization Pie Chart
     resource_utilization_fig = px.pie(filtered_df, names='Resource', values='Actual_Hours', title='Resource Utilization')
     
-    return time_slippage_fig, sprint_burndown_fig, lead_time_fig, resource_utilization_fig
+    return time_slippage_fig, sprint_burndown_fig, lead_time_fig, resource_utilization_fig, html.Div([html.H3('Count'), html.P(f'{task_count}')])
 
 def render_page_3():
     return html.Div([
@@ -194,7 +213,8 @@ def render_page_3():
                 value=df['Sprint'].min(),  # Initial value
                 inline=True,
                 style={'color': 'white'}
-            )
+            ),
+            html.Div(id='task-count-page-3', style={'margin-left': '20px', 'display': 'inline-block'})
         ], style={'text-align': 'left', 'margin-bottom': '20px'}),
         
         html.Div([
@@ -208,11 +228,13 @@ def render_page_3():
 @app.callback(
     [Output('rework-graph', 'figure'),
      Output('task-distribution-graph', 'figure'),
-     Output('cumulative-flow-graph', 'figure')],
+     Output('cumulative-flow-graph', 'figure'),
+     Output('task-count-page-3', 'children')],
     [Input('sprint-radioitems-page-3', 'value')]
 )
 def update_page_3(selected_sprint):
     filtered_df = df[df['Sprint'] == selected_sprint]
+    task_count = filtered_df.shape[0]
     
     # Rework Chart
     rework_fig = px.bar(filtered_df, x='Task_ID', y='Rework_Hours', title='Rework')
@@ -224,7 +246,7 @@ def update_page_3(selected_sprint):
     cumulative_flow_data = filtered_df.groupby(['Date', 'Status']).size().unstack().cumsum().reset_index()
     cumulative_flow_fig = px.area(cumulative_flow_data, x='Date', y=cumulative_flow_data.columns[1:], title='Cumulative Flow Diagram')
     
-    return rework_fig, task_distribution_fig, cumulative_flow_fig
+    return rework_fig, task_distribution_fig, cumulative_flow_fig, html.Div([html.H3('Count'), html.P(f'{task_count}')])
 
 if __name__ == '__main__':
     app.run_server(debug=True)
