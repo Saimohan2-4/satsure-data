@@ -100,3 +100,4 @@ Date,Resource,Task_ID,Task_Type,Story_Points,Status,Start_Date,End_Date,Estimate
 2024-02-11,Resource_8,T99,Improvement,7,In Progress,2024-01-19,2024-02-06,6,18,0,3
 2024-02-05,Resource_1,T100,Feature,8,Completed,2024-01-15,2024-02-02,16,17,2,2
 2024-02-05,Resource_1,T1022,Feature,8,Completed,2024-01-15,2024-02-02,16,17,2,2
+2024-02-05,Resource_1,T162,Feature,8,Completed,2024-01-15,2024-02-02,16,17,2,2
